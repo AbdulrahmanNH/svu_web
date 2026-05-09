@@ -401,3 +401,51 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
+
+
+// هون للفلترة بالصفحة الرئيسية
+(function () {
+    function normalize(s) {
+        return (s || '').toString().trim().toLowerCase();
+    }
+
+    document.querySelectorAll('[data-filter-group]').forEach(group => {
+        const itemsSelector = group.getAttribute('data-filter-items-selector') || '.course-item';
+        const scopedItems = group.querySelectorAll(itemsSelector);
+        const items = scopedItems.length ? Array.from(scopedItems) : Array.from(document.querySelectorAll(itemsSelector));
+        const buttons = Array.from(group.querySelectorAll('.filter-btn'));
+
+        if (!buttons.length || !items.length) return;
+
+        function applyFilter(filterValue) {
+            const normalizedFilter = normalize(filterValue);
+            const isAll = normalizedFilter === normalize('الكل') || normalizedFilter === 'all' || normalizedFilter === '';
+            items.forEach(item => {
+                const cat = normalize(item.getAttribute('data-category'));
+                if (isAll || cat === normalizedFilter) {
+                    item.classList.remove('d-none');
+                } else {
+                    item.classList.add('d-none');
+                }
+            });
+        }
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterVal = btn.getAttribute('data-ar') || btn.getAttribute('data-en') || btn.textContent;
+                applyFilter(filterVal);
+            });
+        });
+
+        const activeBtn = buttons.find(b => b.classList.contains('active'));
+        if (activeBtn) {
+            const initFilter = activeBtn.getAttribute('data-ar') || activeBtn.getAttribute('data-en') || activeBtn.textContent;
+            applyFilter(initFilter);
+        } else {
+            applyFilter('الكل');
+        }
+    });
+})();
