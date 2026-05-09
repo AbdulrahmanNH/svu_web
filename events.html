@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>الفعاليات</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="assets/Css/styles.css" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column min-vh-100 home-page">
+
+<header class="site-navbar sticky-top">
+<nav class="navbar navbar-expand-lg">
+<div class="container py-2">
+<a class="navbar-brand d-flex align-items-center gap-2 fw-semibold text-primary" href="index.html">
+<img src="assets/img/OIP.webp" class="brand-logo rounded-circle" alt="SVU Logo"/>
+<span class="translate" data-ar="فعاليات الجامعة الافتراضية السورية" data-en="Syrian Virtual University Activities">فعاليات الجامعة الافتراضية السورية</span>
+</a>
+<ul class="navbar-nav flex-row gap-3">
+  <li class="nav-item"><a class="nav-link translate" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+  <li class="nav-item"><a class="nav-link active translate" href="events.html" data-ar="الفعاليات" data-en="Events">الفعاليات</a></li>
+  <li class="nav-item"><a class="nav-link translate" href="about.html" data-ar="عن الجامعة" data-en="About SVU">عن الجامعة</a></li>
+  <li class="nav-item"><a class="nav-link translate" href="contact.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+</ul>
+<button class="btn btn-outline-light translate" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</button>
+<button class="btn btn-outline-light me-3" id="lang-toggle">English</button>
+</div>
+</nav>
+</header>
+
+<main class="flex-grow-1">
+<div class="container py-5" data-filter-group data-filter-items-selector=".event-item">
+
+<section class="hero mb-4" style="background-image: linear-gradient(140deg, rgba(3, 18, 50, 0.92), rgba(7, 56, 120, 0.82)), url('https://static.vecteezy.com/system/resources/previews/019/905/663/large_2x/svu-letter-logo-design-on-white-background-svu-creative-circle-letter-logo-concept-svu-letter-design-vector.jpg'); background-position: center left; background-size: cover; background-repeat: no-repeat;">
+<h1 class="display-6 fw-bold mb-3 translate" data-ar="فعاليات طلاب المعلوماتية" data-en="Informatics student activities">فعاليات طلاب المعلوماتية</h1>
+<p class="lead mb-0 translate" data-ar="تدريب عملي يواكب سوق العمل التقني ويعزز الجاهزية المهنية." data-en="Practical training that keeps pace with the technical job market and enhances professional readiness.">تدريب عملي يواكب سوق العمل التقني ويعزز الجاهزية المهنية.</p>
+</section>
+
+<section class="section-card mb-4">
+<h2 class="section-title h4 mb-4 translate" data-ar="الفئات التقنية" data-en="Technical categories">الفئات التقنية</h2>
+<div class="tag-list d-flex flex-wrap gap-2">
+    <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn active" style="width: 10.6rem;" type="button" data-filter="all">
+        <div class="card-body">
+          <i class="bi bi-grid fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="كل الفئات" data-en="All Categories">كل الفئات</h5>
+        </div>
+      </button>
+    <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn" style="width: 10.6rem;" type="button" data-filter="ويب">
+        <div class="card-body">
+          <i class="bi bi-browser-edge fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="تطوير واجهات ويب" data-en="Web Development">تطوير واجهات ويب</h5>
+        </div>
+      </button>
+      <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn" style="width: 10.6rem;" type="button" data-filter="برمجة">
+        <div class="card-body">
+          <i class="bi bi-body-text fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="لغات البرمجة" data-en="Programming Language">لغات البرمجة</h5>
+        </div>
+      </button>
+      <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn" style="width: 10.6rem;" type="button" data-filter="ذكاء اصطناعي">
+        <div class="card-body">
+          <i class="bi bi-filetype-ai fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="الذكاء الصنعي" data-en="AI"></h5>
+        </div>
+      </button>
+      <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn" style="width: 10.6rem;" type="button" data-filter="تطوير تطبيقات">
+        <div class="card-body">
+          <i class="bi bi-phone fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="تطوير تطبيقات الجوال " data-en="Mobile Development"></h5>
+        </div>
+      </button>
+      <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn" style="width: 10.6rem;" type="button" data-filter="أمن المعلومات">
+        <div class="card-body">
+          <i class="bi bi-fingerprint fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="الشبكات و الحماية" data-en="Network and Security"></h5>
+        </div>
+      </button>
+      <button class="card d-flex flex-column align-items-center justify-content-center text-center p-0 filter-btn" style="width: 10.6rem;" type="button" data-filter="قواعد بيانات">
+        <div class="card-body">
+          <i class="bi bi-database-fill fs-1 text-primary"></i>
+          <h5 class="card-title text-center mt-2 translate" data-ar="قواعد البيانات" data-en="Database"></h5>
+        </div>
+      </button>
+</div>
+</section>
+
+<section class="section-card">
+  <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
+      <h2 class="section-title h4 mb-0 translate" data-ar="قائمة الفعاليات" data-en="Events List">قائمة الفعاليات</h2>
+      <form id="eventsSearchForm" class="d-flex" role="search">
+          <input id="eventsSearchInput" data-filter-search class="form-control translate" type="search" 
+            placeholder="ابحث عن فعالية..." 
+            data-ar-placeholder="ابحث عن فعالية..." 
+            data-en-placeholder="Search for an event..." 
+            aria-label="Search"/>
+      </form>
+  </div>
+  <p class="alert alert-warning d-none mb-3 translate" data-ar="لا يوجد فعاليات" data-en="No Events Found" data-no-results> لا يوجد فعاليات </p>
+  
+  <div class="row g-3">
+      <div class="col-md-6 col-lg-4 event-item" data-category="برمجة">
+          <article class="event-card h-100">
+              <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80" alt="Python Basics"/>
+              <div class="p-3">
+                  <h3 class="h5 translate" data-ar="أساسيات بايثون" data-en="Python Basics">أساسيات بايثون</h3>
+                  <p class="text-secondary mb-2 translate" data-ar="2026-05-10 | برمجة" data-en="2026-05-10 | Programming">2026-05-10 | برمجة</p>
+                  <p class="mb-3 translate" data-ar="مقدمة عملية لكتابة الشيفرات وحل المشكلات البرمجية باستخدام Python." data-en="A practical introduction to coding and problem-solving using Python.">مقدمة عملية لكتابة الشيفرات وحل المشكلات البرمجية باستخدام Python.</p>
+                  <a class="btn btn-outline-primary btn-sm translate" href="event.html?id=python-basics" data-ar="تفاصيل" data-en="Details">تفاصيل</a>
+              </div>
+          </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 event-item" data-category="قواعد بيانات">
+          <article class="event-card h-100">
+              <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=900&q=80" alt="SQL Database"/>
+              <div class="p-3">
+                  <h3 class="h5 translate" data-ar="قواعد بيانات SQL" data-en="SQL Database">قواعد بيانات SQL</h3>
+                  <p class="text-secondary mb-2 translate" data-ar="2026-05-15 | قواعد بيانات" data-en="2026-05-15 | Databases">2026-05-15 | قواعد بيانات</p>
+                  <p class="mb-3 translate" data-ar="تعلم إنشاء قواعد بيانات فعالة وكتابة استعلامات احترافية للتحليل." data-en="Learn to create efficient databases and write professional queries for analysis.">تعلم إنشاء قواعد بيانات فعالة وكتابة استعلامات احترافية للتحليل.</p>
+                  <a class="btn btn-outline-primary btn-sm translate" href="event.html?id=sql-database" data-ar="تفاصيل" data-en="Details">تفاصيل</a>
+              </div>
+          </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 event-item" data-category="ويب">
+          <article class="event-card h-100">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80" alt="Web Development"/>
+              <div class="p-3">
+                  <h3 class="h5 translate" data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</h3>
+                  <p class="text-secondary mb-2 translate" data-ar="2026-05-20 | ويب" data-en="2026-05-20 | Web">2026-05-20 | ويب</p>
+                  <p class="mb-3 translate" data-ar="تطبيقات على تصميم واجهات متجاوبة وبناء صفحات ويب حديثة." data-en="Applications on responsive interface design and building modern web pages.">تطبيقات على تصميم واجهات متجاوبة وبناء صفحات ويب حديثة.</p>
+                  <a class="btn btn-outline-primary btn-sm translate" href="event.html?id=web-development" data-ar="تفاصيل" data-en="Details">تفاصيل</a>
+              </div>
+          </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 event-item" data-category="ذكاء اصطناعي">
+          <article class="event-card h-100">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="AI Foundations"/>
+              <div class="p-3">
+                  <h3 class="h5 translate" data-ar="أساسيات الذكاء الاصطناعي" data-en="AI Foundations">أساسيات الذكاء الاصطناعي</h3>
+                  <p class="text-secondary mb-2 translate" data-ar="2026-05-25 | ذكاء اصطناعي" data-en="2026-05-25 | AI">2026-05-25 | ذكاء اصطناعي</p>
+                  <p class="mb-3 translate" data-ar="مقدمة عملية لفهم تطبيقات الذكاء الاصطناعي والنماذج المستخدمة." data-en="Practical introduction to understanding AI applications and models.">مقدمة عملية لفهم تطبيقات الذكاء الاصطناعي والنماذج المستخدمة في الحلول الذكية.</p>
+                  <a class="btn btn-outline-primary btn-sm translate" href="event.html?id=ai-foundations" data-ar="تفاصيل" data-en="Details">تفاصيل</a>
+              </div>
+          </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 event-item" data-category="أمن المعلومات">
+          <article class="event-card h-100">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80" alt="Cybersecurity Essentials"/>
+              <div class="p-3">
+                  <h3 class="h5 translate" data-ar="أساسيات الأمن السيبراني" data-en="Cybersecurity Essentials">أساسيات الأمن السيبراني</h3>
+                  <p class="text-secondary mb-2 translate" data-ar="2026-06-01 | أمن المعلومات" data-en="2026-06-01 | Cybersecurity">2026-06-01 | أمن المعلومات</p>
+                  <p class="mb-3 translate" data-ar="تعرف على أساسيات الأمن السيبراني وأساليب حماية الأنظمة." data-en="Learn cybersecurity basics and methods for protecting systems.">تعرف على أساسيات الأمن السيبراني وأساليب حماية الأنظمة والشبكات من الهجمات.</p>
+                  <a class="btn btn-outline-primary btn-sm translate" href="event.html?id=cybersecurity-essentials" data-ar="تفاصيل" data-en="Details">تفاصيل</a>
+              </div>
+          </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 event-item" data-category="برمجة">
+          <article class="event-card h-100">
+              <img src="https://www.formationbdarija.com/wp-content/uploads/2025/01/%D8%A7%D9%84%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A7%D8%AA-%D9%88%D9%87%D9%8A%D8%A7%D9%83%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.webp" alt="Algorithms Workshop"/>
+              <div class="p-3">
+                  <h3 class="h5 translate" data-ar="الخوارزميات وحل المشكلات" data-en="Algorithms and Problem Solving">الخوارزميات وحل المشكلات</h3>
+                  <p class="text-secondary mb-2 translate" data-ar="2026-06-12 | برمجة" data-en="2026-06-12 | Programming">2026-06-12 | برمجة</p>
+                  <p class="mb-3 translate" data-ar="ورشة مكثفة على الخوارزميات وهياكل البيانات لتقوية التفكير البرمجي." data-en="Intensive workshop on algorithms and data structures to strengthen programming logic.">ورشة مكثفة على الخوارزميات وهياكل البيانات لتقوية مهارات التفكير البرمجي.</p>
+                  <a class="btn btn-outline-primary btn-sm translate" href="event.html?id=algorithms-workshop" data-ar="تفاصيل" data-en="Details">تفاصيل</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer class="site-footer mt-auto py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h3 class="h6 text-light mb-2 translate" data-ar="عن الجامعة" data-en="About University">عن الجامعة</h3>
+        <p class="footer-description mb-0 small translate" data-ar="منصة تعليمية رقمية متكاملة تابعة للجامعة الافتراضية السورية، تهدف إلى بناء مهارات تقنية متقدمة لدى الطلاب عبر فعاليات عملية، ورش تفاعلية، ومسارات تدريبية مرتبطة مباشرة بمتطلبات سوق العمل المحلي والعالمي." data-en="An integrated digital learning platform affiliated with the Syrian Virtual University, which aims to build advanced technical skills among students through practical activities, interactive workshops, and training paths directly linked to the requirements of the local and global labor market.">منصة تعليمية رقمية متكاملة تابعة للجامعة الافتراضية السورية، تهدف إلى بناء مهارات تقنية متقدمة لدى الطلاب عبر فعاليات عملية، ورش تفاعلية، ومسارات تدريبية مرتبطة مباشرة بمتطلبات سوق العمل المحلي والعالمي.</p>
+      </div>
+    <div class="col-6 col-lg-2">
+      <h3 class="h6 text-light mb-2 translate" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+      <ul class="footer-links list-unstyled mb-0">
+        <li><a href="index.html" class="translate" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="events.html" class="translate" data-ar="الفعاليات" data-en="Events">الفعاليات</a></li>
+        <li><a href="about.html" class="translate" data-ar="عن الدليل" data-en="About Guide">عن الدليل</a></li>
+        <li><a href="contact.html" class="translate" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+      </ul>
+    </div>
+  <div class="col-6 col-lg-2">
+    <h3 class="h6 text-light mb-2 translate" data-ar="الأقسام" data-en="Departments">الأقسام</h3>
+    <ul class="footer-links list-unstyled mb-0">
+    <li><a href="events.html" class="translate" data-ar="البرمجة" data-en="Programming">البرمجة</a></li>
+    <li><a href="events.html" class="translate" data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</a></li>
+    <li><a href="events.html" class="translate" data-ar="الذكاء الاصطناعي" data-en="Artificial Intelligence">الذكاء الاصطناعي</a></li>
+    <li><a href="events.html" class="translate" data-ar="قواعد البيانات" data-en="Database Systems">قواعد البيانات</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h3 class="h6 text-light mb-2 translate" data-ar="اشترك بالبريد الإلكتروني" data-en="Subscribe to our newsletter">اشترك بالبريد الإلكتروني</h3>
+    <form class="footer-newsletter d-flex gap-2 mb-3" onsubmit="event.preventDefault();">
+      <input type="email" class="form-control" placeholder="example@email.com" aria-label="newsletter email"/>
+      <button type="submit" class="btn btn-svu translate" data-ar="اشتراك" data-en="Subscribe">اشتراك</button>
+    </form>
+    <div class="d-flex gap-2">
+      <a id="facebook" class="footer-social-link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a id="instagram" class="footer-social-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a id="telegram" class="footer-social-link" href="https://telegram.org" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+    </div>
+  </div>
+  </div>
+  <div class="created-by-box">
+    <h4 class="translate" data-ar="تم إنشاء الموقع بواسطة:" data-en="Created This Website by:">تم إنشاء الموقع بواسطة:</h4>
+    <div class="created-by-list">
+      <div class="created-by-item"><span class="created-by-id">malaz_287893</span><span class="created-by-name">Malaz Muhammad Firas Taqi</span></div>
+      <div class="created-by-item"><span class="created-by-id">ragad_299428</span><span class="created-by-name">Raghad Al-Haroun</span></div>
+      <div class="created-by-item"><span class="created-by-id">abeer_333621</span><span class="created-by-name">Abeer Muawiya Jarjanazi</span></div>
+      <div class="created-by-item"><span class="created-by-id">aya_287174</span><span class="created-by-name">Aya</span></div>
+      <div class="created-by-item"><span class="created-by-id">Abdulrahman_285039</span><span class="created-by-name">Abdalrahman Nahlaoui</span></div>
+    </div>
+  </div>
+  <p class="mb-0 mt-4 text-center small text-white-50">© 2026 Syrian Virtual University - All rights reserved.</p>
+  </div>
+  </footer>
+
+<script src="assets/JS/main.js"></script>
+</body>
+</html>

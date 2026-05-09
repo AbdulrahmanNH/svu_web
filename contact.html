@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title class="translate" data-ar="اتصل بنا" data-en="Contact us">اتصل بنا</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="assets/Css/styles.css" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column min-vh-100 home-page">
+
+<header class="site-navbar sticky-top">
+<nav class="navbar navbar-expand-lg">
+<div class="container py-2">
+<a class="navbar-brand d-flex align-items-center gap-2 fw-semibold text-primary" href="index.html">
+<img src="assets/img/OIP.webp" class="brand-logo rounded-circle" alt="SVU Logo"/>
+<span class="translate" data-ar="اتصل بنا" data-en="Contact us">اتصل بنا</span>
+</a>
+<ul class="navbar-nav flex-row gap-3">
+    <li class="nav-item"><a class="nav-link translate" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+    <li class="nav-item"><a class="nav-link translate" href="events.html" data-ar="الفعاليات" data-en="Events">الفعاليات</a></li>
+    <li class="nav-item"><a class="nav-link translate" href="about.html" data-ar="عن الجامعة" data-en="About SVU">عن الجامعة</a></li>
+    <li class="nav-item"><a class="nav-link active translate" href="contact.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+</ul>
+<button class="btn btn-outline-light translate" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</button>
+<button class="btn btn-outline-light me-3" id="lang-toggle">English</button>
+
+</div>
+</nav>
+</header>
+
+<main class="flex-grow-1">
+    <div class="container py-5">
+        <section class="hero mb-4" style="background-image: linear-gradient(135deg, rgba(13, 59, 102, 0.95), rgba(42, 157, 143, 0.9)), url('https://images.unsplash.com/photo-1516382799247-87df95d790b7?auto=format&fit=crop&w=1400&q=80');">
+            <h1 class="display-6 fw-bold mb-0 translate" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h1>
+        </section>
+        <div class="row g-4">
+            <section class="col-lg-7">
+                <div class="section-card section-bg bg-latest-events h-100">
+                    <div id="contactAlertContainer" class="mb-3"></div>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label translate" data-ar="الاسم" data-en="Name">الاسم</label>
+                            <input id="name" class="form-control translate" placeholder="أدخل اسمك" data-ar-placeholder="أدخل اسمك" data-en-placeholder="Enter your name" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label translate" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+                            <input id="email" type="email" class="form-control translate" placeholder="example@email.com" data-ar-placeholder="example@email.com" data-en-placeholder="example@email.com" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label translate" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                            <textarea id="message" class="form-control translate" rows="5" placeholder="اكتب رسالتك هنا" data-ar-placeholder="اكتب رسالتك هنا" data-en-placeholder="Write your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn px-4 btn-outline-light translate" data-ar="إرسال" data-en="Send">إرسال</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="col-lg-5">
+                <div class="section-card section-bg bg-contact-info h-100">
+                    <h2 class="section-title h4 mb-3 translate" data-ar="معلومات التواصل" data-en="Contact Information">معلومات التواصل</h2>
+                    <ul class="list-unstyled contact-info-list mb-0">
+                        <li class="contact-info-item">
+                            <span class="contact-info-icon"><i class="bi bi-envelope-fill"></i></span>
+                            <div>
+                                <p class="mb-0 fw-semibold translate" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</p>
+                                <a class="text-secondary text-decoration-none" href="mailto:svu.events.general@example.com">svu.events.general@example.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <span class="contact-info-icon"><i class="bi bi-telephone-fill"></i></span>
+                            <div>
+                                <p class="mb-0 fw-semibold translate" data-ar="الهاتف" data-en="Phone Number">الهاتف</p>
+                                <a class="text-secondary text-decoration-none" dir="ltr" href="tel:+963932564871">+963 932 564 871</a>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <span class="contact-info-icon"><i class="bi bi-facebook"></i></span>
+                            <div>
+                                <p class="mb-0 fw-semibold translate" data-ar="فيسبوك" data-en="Facebook">Facebook</p>
+                                <a class="text-secondary text-decoration-none" href="https://facebook.com" target="_blank" rel="noopener">facebook.com/svu.events</a>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <span class="contact-info-icon"><i class="bi bi-telegram"></i></span>
+                            <div>
+                                <p class="mb-0 fw-semibold translate" data-ar="تلغرام" data-en="Telegram">Telegram</p>
+                                <a class="text-secondary text-decoration-none" href="https://t.me/Svu_contact" target="_blank" rel="noopener">@Svu_contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div> 
+
+        <section class="section-card mt-4">
+            <h2 class="section-title h4 mb-3 translate" data-ar="الأسئلة الشائعة" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3 class="h6 mb-2 translate" data-ar="كيف يمكنني التسجيل في الفعاليات؟" data-en="How can I register for events?">كيف يمكنني التسجيل في الفعاليات؟</h3>
+                    <p class="mb-0 text-secondary translate" data-ar="يمكنك الدخول إلى صفحة الفعاليات، اختيار الفعالية المناسبة، ثم الضغط على زر التفاصيل ومتابعة خطوات التسجيل." data-en="You can go to the events page, choose the appropriate event, then click the details button and follow the registration steps.">يمكنك الدخول إلى صفحة الفعاليات، اختيار الفعالية المناسبة، ثم الضغط على زر التفاصيل ومتابعة خطوات التسجيل.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="h6 mb-2 translate" data-ar="هل الفعاليات مجانية لطلاب الجامعة الافتراضية السورية؟" data-en="Are events free for SVU students?">هل الفعاليات مجانية لطلاب الجامعة الافتراضية السورية؟</h3>
+                    <p class="mb-0 text-secondary translate" data-ar="معظم الفعاليات الأساسية مجانية، بينما قد تتطلب بعض الورش المتقدمة رسوماً رمزية حسب نوع المحتوى والمدرب." data-en="Most basic events are free, while some advanced workshops may require nominal fees depending on the content and the trainer.">معظم الفعاليات الأساسية مجانية، بينما قد تتطلب بعض الورش المتقدمة رسوماً رمزية حسب نوع المحتوى والمدرب.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="h6 mb-2 translate" data-ar="هل أحصل على شهادة حضور بعد انتهاء الفعالية؟" data-en="Do I get a certificate of attendance after the event?">هل أحصل على شهادة حضور بعد انتهاء الفعالية؟</h3>
+                    <p class="mb-0 text-secondary translate" data-ar="نعم، يتم إرسال شهادة حضور إلكترونية عند استيفاء متطلبات المشاركة وإتمام الحضور المطلوب." data-en="Yes, an electronic certificate of attendance is sent upon meeting the participation requirements and completing the required attendance.">نعم، يتم إرسال شهادة حضور إلكترونية عند استيفاء متطلبات المشاركة وإتمام الحضور المطلوب.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="h6 mb-2 translate" data-ar="ماذا أفعل إذا واجهت مشكلة تقنية أثناء التسجيل؟" data-en="What should I do if I encounter a technical problem during registration?">ماذا أفعل إذا واجهت مشكلة تقنية أثناء التسجيل؟</h3>
+                    <p class="mb-0 text-secondary translate" data-ar="يمكنك التواصل معنا مباشرة عبر نموذج الاتصال أو عبر البريد الإلكتروني وسنقوم بمساعدتك في أسرع وقت." data-en="You can contact us directly via the contact form or via email, and we will assist you as soon as possible.">يمكنك التواصل معنا مباشرة عبر نموذج الاتصال أو عبر البريد الإلكتروني وسنقوم بمساعدتك في أسرع وقت.</p>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer mt-auto py-5">
+    <div class="container">
+    <div class="row g-4">
+    <div class="col-lg-4">
+    <h3 class="h6 text-light mb-2 translate" data-ar="عن الجامعة" data-en="About University">عن الجامعة</h3>
+    <p class="footer-description mb-0 small translate" data-ar="منصة تعليمية رقمية متكاملة تابعة للجامعة الافتراضية السورية، تهدف إلى بناء مهارات تقنية متقدمة لدى الطلاب عبر فعاليات عملية، ورش تفاعلية، ومسارات تدريبية مرتبطة مباشرة بمتطلبات سوق العمل المحلي والعالمي." data-en="An integrated digital learning platform affiliated with the Syrian Virtual University, which aims to build advanced technical skills among students through practical activities, interactive workshops, and training paths directly linked to the requirements of the local and global labor market.">منصة تعليمية رقمية متكاملة تابعة للجامعة الافتراضية السورية، تهدف إلى بناء مهارات تقنية متقدمة لدى الطلاب عبر فعاليات عملية، ورش تفاعلية، ومسارات تدريبية مرتبطة مباشرة بمتطلبات سوق العمل المحلي والعالمي.</p>
+    </div>
+    <div class="col-6 col-lg-2">
+    <h3 class="h6 text-light mb-2 translate" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+    <ul class="footer-links list-unstyled mb-0">
+    <li><a href="index.html" class="translate" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+    <li><a href="events.html" class="translate" data-ar="الفعاليات" data-en="Events">الفعاليات</a></li>
+    <li><a href="about.html" class="translate" data-ar="عن الدليل" data-en="About Guide">عن الدليل</a></li>
+    <li><a href="contact.html" class="translate" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+    </ul>
+    </div>
+    <div class="col-6 col-lg-2">
+    <h3 class="h6 text-light mb-2 translate" data-ar="الأقسام" data-en="Departments">الأقسام</h3>
+    <ul class="footer-links list-unstyled mb-0">
+    <li><a href="events.html" class="translate" data-ar="البرمجة" data-en="Programming">البرمجة</a></li>
+    <li><a href="events.html" class="translate" data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</a></li>
+    <li><a href="events.html" class="translate" data-ar="الذكاء الاصطناعي" data-en="Artificial Intelligence">الذكاء الاصطناعي</a></li>
+    <li><a href="events.html" class="translate" data-ar="قواعد البيانات" data-en="Database Systems">قواعد البيانات</a></li>
+    </ul>
+    </div>
+    <div class="col-lg-4">
+    <h3 class="h6 text-light mb-2 translate" data-ar="اشترك بالبريد الإلكتروني" data-en="Subscribe to our newsletter">اشترك بالبريد الإلكتروني</h3>
+    <form class="footer-newsletter d-flex gap-2 mb-3" onsubmit="event.preventDefault();">
+    <input type="email" class="form-control" placeholder="example@email.com" aria-label="newsletter email"/>
+    <button type="submit" class="btn btn-svu translate" data-ar="اشتراك" data-en="Subscribe">اشتراك</button>
+    </form>
+    <div class="d-flex gap-2">
+    <a id="facebook" class="footer-social-link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a id="instagram" class="footer-social-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a id="telegram" class="footer-social-link" href="https://telegram.org" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+    </div>
+    </div>
+    </div>
+    <div class="created-by-box">
+    <h4 class="translate" data-ar="تم إنشاء الموقع بواسطة:" data-en="Created This Website by:">تم إنشاء الموقع بواسطة:</h4>
+    <div class="created-by-list">
+    <div class="created-by-item"><span class="created-by-id">malaz_287893</span><span class="created-by-name">Malaz Muhammad Firas Taqi</span></div>
+    <div class="created-by-item"><span class="created-by-id">ragad_299428</span><span class="created-by-name">Raghad Al-Haroun</span></div>
+    <div class="created-by-item"><span class="created-by-id">abeer_333621</span><span class="created-by-name">Abeer Muawiya Jarjanazi</span></div>
+    <div class="created-by-item"><span class="created-by-id">aya_287174</span><span class="created-by-name">Aya</span></div>
+    <div class="created-by-item"><span class="created-by-id">Abdulrahman_285039</span><span class="created-by-name">Abdalrahman Nahlaoui</span></div>
+    </div>
+    </div>
+    <p class="mb-0 mt-4 text-center small text-white-50">© 2026 Syrian Virtual University - All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/JS/main.js"></script>
+</body>
+</html>
